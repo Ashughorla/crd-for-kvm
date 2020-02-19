@@ -1,0 +1,7 @@
+apiVersion: metal3.io.sigs.k8s.io/v1
+kind: VmCreator
+metadata:
+  name: vmcreator-sample
+spec:
+  # Add fields here
+  foo: bar

@@ -1,0 +1,20 @@
+# permissions to do viewer vmcreators.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: vmcreator-viewer-role
+rules:
+- apiGroups:
+  - metal3.io.sigs.k8s.io
+  resources:
+  - vmcreators
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - metal3.io.sigs.k8s.io
+  resources:
+  - vmcreators/status
+  verbs:
+  - get

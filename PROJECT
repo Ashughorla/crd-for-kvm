@@ -1,0 +1,7 @@
+domain: sigs.k8s.io
+repo: ashu/crd-for-kvm
+resources:
+- group: metal3.io
+  kind: VmCreator
+  version: v1
+version: "2"
